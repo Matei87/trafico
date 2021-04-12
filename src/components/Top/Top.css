@@ -1,0 +1,256 @@
+#top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%; height: 100%;
+    margin-bottom: 2rem;
+}
+
+/* NAVBAR */
+#top nav {
+    display: flex;
+    align-items: center;
+    position: absolute; top: 0; left: 0; right: 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    z-index: 2; padding: 3rem 0;
+    background-color: transparent !important;
+}
+#top nav .container-fluid {
+    display: grid;
+    grid-template-columns: 212px 604px;
+    grid-template-rows: 60px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#top nav .container-fluid .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+#top nav .container-fluid .navbar-menu .nav-item {
+    display: flex;
+    height: 100%; width: 100%;
+    justify-content: space-evenly;
+}
+
+#top nav .container-fluid .navbar-menu .nav-item .nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 18.96px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navbar-dark .navbar-toggler {
+    border: none !important;
+}
+button:focus:not(:focus-visible) {
+    outline: none !important;
+}
+#top nav .container-fluid .navbar-menu .nav-item:nth-child(4) {
+    height: 3.75rem;
+}
+#top nav .container-fluid .navbar-menu .nav-item:nth-child(4) .nav-link .btn {
+    background: #EE4D47;
+    border-radius: 5px;
+    width: 9.875rem; height: 100%;
+    border: none;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 !important;
+}
+
+
+#top .images {
+    width: 100%; height: 100%;
+}
+#top .images .background-palms {
+    position: relative;
+}
+#top .images .background-palms svg {
+    width: 100%; height: 100%;
+}
+#top .images .background-car {
+    width: 40%; height: 40vh;
+}
+#top .images .background-car svg {
+    position: relative;
+    left: 0; bottom: 190px;
+}
+
+
+#top .presentation {
+    position: absolute;
+    top: 14%; left: 15%;
+    width: 100%;
+    max-width: 40%;
+}
+#top .presentation > span {
+    display: flex; align-items: center;
+    color: #fff;
+    font-family: DM Serif Display;
+    font-size: 6.25rem;
+    margin-bottom: 1rem;
+    line-height: 110px;
+}
+
+#top .presentation .btn {
+    background: #EE4D47;
+    border-radius: 5px;
+    border: none;
+    display: flex; justify-content: space-around; align-items: center;
+    color: #FFFFFF;
+    width: 13.75rem; height: 3.75rem;
+}
+
+#top .presentation .btn span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+#top .presentation .btn svg {
+    font-size: 2rem;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #top {
+        margin-bottom: 1rem;
+    }
+    #top nav {
+        padding: 1rem 0;
+        background-color: #212529 !important;
+    }
+    #top nav .container-fluid {
+        max-width: 500px !important;
+        grid-template-columns: 100px auto;
+    }
+    #top .navbar-dark .navbar-toggler {
+        margin-left: auto;
+    }
+    #top .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    #top nav .container-fluid .navbar-menu {
+        display: block;
+    }
+    #top .presentation {
+        top: 29%;
+        max-width: 60%;
+    }
+    #top .presentation > span {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    #top .presentation .btn {
+        width: 11rem; height: 3rem;
+    }
+    #top .images .background-car {
+        height: 10vh;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #top {
+        margin-bottom: 1rem;
+    }
+    #top .navbar-dark .navbar-toggler {
+        margin-left: auto;
+    }
+    #top .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    #top nav .container-fluid .navbar-menu {
+        display: block;
+    }
+    #top nav {
+        padding: 1rem 0;
+        background-color: #212529 !important;
+    }
+    #top nav .container-fluid {
+        max-width: 700px !important;
+        grid-template-columns: 100px auto;
+    }
+    #top .presentation {
+        top: 20%;
+    }
+    #top .presentation > span {
+        font-size: 3.2rem;
+        line-height: 35px;
+    }
+    #top .images .background-car {
+        height: 10vh;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #top {
+        margin-bottom: 1rem;
+    }
+    #top nav {
+        background-color: #212529 !important;
+        padding: 2rem 0;
+    }
+    #top nav .container-fluid {
+       grid-template-columns: 212px auto;
+    }
+    #top .navbar-dark .navbar-toggler {
+        margin-left: auto;
+    }
+    #top .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    #top nav .container-fluid .navbar-menu {
+        display: block;
+    }
+    #top .presentation > span {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+    #top .images .background-car {
+        height: 20vh;
+    }
+    #top .presentation {
+        top: 25%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #top {
+        margin-bottom: 1rem;
+    }
+    #top .presentation > span {
+        font-size: 5rem;
+        line-height: 90px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
